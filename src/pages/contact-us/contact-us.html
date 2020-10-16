@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar hideBackButton color="primary">
+      <ion-buttons left>
+          <button ion-button menuToggle style="display: block !important;">
+              <ion-icon name="md-list" color="light"></ion-icon>
+            </button>
+      </ion-buttons>
+    <ion-title>
+      <span text-color="light"> Contact Us </span>
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openNotificationPage()">
+        <ion-icon name="md-notifications" color="light"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>  
+</ion-header>
+
+<ion-content>
+
+  <div>
+    <img alt="img" src="/assets/imgs/contactus.jpg">
+    <div padding="5px">
+
+      <!--      <div class="content-header-card">-->
+      <!--        <h6>-->
+      <!--&lt;!&ndash;          We love hearing from you&ndash;&gt;-->
+      <!--          Commercial Bank Call Center-->
+      <!--        </h6>-->
+      <!--      </div>-->
+
+      <div class="custom-card border-left-primary card-top">
+        <ion-icon class="ion-icon-clz" float-right name="md-call"></ion-icon>
+        <div (click)="makeCall('+940112353596')" class="card-text text-hint">CALL</div>
+        <div (click)="makeCall('+940112353596')" class="card-text text">+94(0)11 2353596</div>
+        <div (click)="makeCall('+940114935536')" class="card-text text">+94(0)11 4935536</div>
+        <div (click)="makeCall('+940114935536')" class="card-text text">+94(0)11 4935537</div>
+      </div>
+      <div class="custom-card border-left-success">
+        <ion-icon class="ion-icon-clz" float-right name="md-print"></ion-icon>
+        <div class="card-text text-hint">FAX</div>
+        <div class="card-text text">+94(0)11 2430730</div>
+      </div>
+      <div class="custom-card border-left-warning">
+        <ion-icon class="ion-icon-clz" float-right name="md-mail"></ion-icon>
+        <div class="card-text text-hint">EMAIL</div>
+        <a class="card-text text text-decoration-none" href="mailto:ebanking@combank.net">ebanking@combank.net</a>
+      </div>
+      <div class="custom-card border-left-danger">
+        <ion-icon class="ion-icon-clz" float-right name="md-navigate"></ion-icon>
+        <div class="card-text text-hint">POSTAL ADDRESS</div>
+        <div class="card-text text">Commercial Bank of Ceylon PLC,</div>
+        <div class="card-text text">No 21,Sir Razik Fareed Mawatha,</div>
+        <div class="card-text text">P.O Box 856,Colombo 01,</div>
+        <div class="card-text text">Sri Lanka</div>
+      </div>
+    </div>
+  </div>
+</ion-content>

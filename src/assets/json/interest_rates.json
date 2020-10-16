@@ -1,0 +1,278 @@
+{
+  "savings_accounts": [
+    {
+      "name": "Arunalu Minors' Savings Accounts",
+      "details": [
+        {
+          "period": "Interest paid Monthly",
+          "interest_rate": 6.5,
+          "annual_rate": 6.7
+        }
+      ]
+    },
+    {
+      "name": "Dotcom Teen Saver & Spin Accounts",
+      "details": [
+        {
+          "period": "Interest paid Monthly",
+          "interest_rate": 4.5,
+          "annual_rate": 4.59
+        }
+      ]
+    },
+    {
+      "name": "Power Bonus Accounts",
+      "details": [
+        {
+          "period": "Interest paid Monthly-(60% more)",
+          "interest_rate": 3.5,
+          "annual_rate": 5.684
+        }
+      ]
+    },
+    {
+      "name": "Super Saver Savings",
+      "details": [
+        {
+          "period": "Rs.500,000/= and more",
+          "interest_rate": 5.0,
+          "annual_rate": 5.12
+        },
+        {
+          "period": "Rs.50,000/= to Rs.499,999/=",
+          "interest_rate": 4.5,
+          "annual_rate": 4.59
+        },
+        {
+          "period": "Below Rs.500,000/=",
+          "interest_rate": 3.5,
+          "annual_rate": 3.56
+        }
+      ]
+    },
+    {
+      "name": "Udara Senior Citizen Accounts",
+      "details": [
+        {
+          "period": "Udara Savings - Int paid Monthly",
+          "interest_rate": 4.0,
+          "annual_rate": 4.07
+        },
+        {
+          "period": "Udara Fixed Deposits - Int paid Monthly",
+          "interest_rate": 8.85,
+          "annual_rate": 9.25
+        },
+        {
+          "period": "Udara Fixed Deposits - Int at maturity",
+          "interest_rate": 9.25,
+          "annual_rate": 9.25
+        }
+      ]
+    },
+    {
+      "name": "Anagi Womens Savings Accounts",
+      "details": [
+        {
+          "period": "Interest paid Monthly",
+          "interest_rate": 4.0,
+          "annual_rate": 4.07
+        }
+      ]
+    }
+  ],
+  "deposits": [
+    {
+      "name": "Fixed Deposits",
+      "details": [
+        {
+          "period": "1 Months (LKR)",
+          "interest_rate": 7.0,
+          "annual_rate": 7.23
+        },
+        {
+          "period": "2 Months (LKR)",
+          "interest_rate": 7.0,
+          "annual_rate": 7.21
+        },
+        {
+          "period": "3 Months (LKR)",
+          "interest_rate": 8.0,
+          "annual_rate": 8.24
+        },
+        {
+          "period": "6 Months (LKR)",
+          "interest_rate": 8.5,
+          "annual_rate": 8.68
+        },
+        {
+          "period": "12 Months -Interest paid monthly (LKR)",
+          "interest_rate": 8.65,
+          "annual_rate": 9.0
+        },
+        {
+          "period": "12 Months -Interest at maturity (LKR)",
+          "interest_rate": 9.0,
+          "annual_rate": 9.0
+        },
+        {
+          "period": "24 Months -Interest paid monthly (LKR)",
+          "interest_rate": 8.85,
+          "annual_rate": 9.22
+        },
+        {
+          "period": "24 Months -Interest paid annually (LKR)",
+          "interest_rate": 9.25,
+          "annual_rate": 9.25
+        },
+        {
+          "period": "24 Months -Interest at maturity (LKR)",
+          "interest_rate": 9.7,
+          "annual_rate": 9.27
+        },
+        {
+          "period": "36 Months -Interest paid monthly (LKR)",
+          "interest_rate": 8.85,
+          "annual_rate": 9.22
+        },
+        {
+          "period": "36 Months -Interest paid annually (LKR)",
+          "interest_rate": 9.25,
+          "annual_rate": 9.25
+        },
+        {
+          "period": "36 Months -Interest at maturity (LKR)",
+          "interest_rate": 10.15,
+          "annual_rate": 9.27
+        },
+        {
+          "period": "48 Months -Interest paid monthly (LKR)",
+          "interest_rate": 8.85,
+          "annual_rate": 9.22
+        },
+        {
+          "period": "48 Months -Interest paid annually (LKR)",
+          "interest_rate": 9.25,
+          "annual_rate": 9.25
+        },
+        {
+          "period": "48 Months -Interest at maturity (LKR)",
+          "interest_rate": 10.6,
+          "annual_rate": 9.24
+        },
+        {
+          "period": "60 Months -Interest paid monthly (LKR)",
+          "interest_rate": 8.85,
+          "annual_rate": 9.22
+        },
+        {
+          "period": "24 Months -Interest paid annually (LKR)",
+          "interest_rate": 9.25,
+          "annual_rate": 9.25
+        },
+        {
+          "period": "60 Months -Interest at maturity (LKR)",
+          "interest_rate": 11.15,
+          "annual_rate": 9.27
+        }
+      ]
+    },
+    {
+      "name": "Saving Deposits",
+      "details": [
+        {
+          "period": "Interest paid monthly",
+          "interest_rate": 3.5,
+          "annual_rate": 3.56
+        }
+      ]
+    },
+    {
+      "name": "Seven Days Call Deposits",
+      "details": [
+        {
+          "period": "Below Rs. 500,000/=",
+          "interest_rate": 4.0,
+          "annual_rate": 0
+        },
+        {
+          "period": "Rs. 500,000/= and above",
+          "interest_rate": 5.0,
+          "annual_rate": 0
+        }
+      ]
+    }
+  ],
+  "other": [
+    {
+      "name": "Money Market Accounts",
+      "details": [
+        {
+          "period": "This week's rate (Tuesday to Monday)",
+          "interest_rate": 7.0,
+          "annual_rate": 0
+        }
+      ]
+    },
+    {
+      "name": "Treasury Bills/Bonds REPO Rates",
+      "details": [
+        {
+          "period": "901 001 Months Repo > 100,000.00",
+          "interest_rate": 6.75,
+          "annual_rate": 0
+        },
+        {
+          "period": "901 001 Months Repo > 1,000,000.00",
+          "interest_rate": 7.0,
+          "annual_rate": 0
+        },
+        {
+          "period": "902 003 Months Repo > 50,000.00",
+          "interest_rate": 7.0,
+          "annual_rate": 0
+        },
+        {
+          "period": "902 003 Months Repo > 100,000.00",
+          "interest_rate": 7.0,
+          "annual_rate": 0
+        },
+        {
+          "period": "902 003 Months Repo > 1,000,000.00",
+          "interest_rate": 7.2,
+          "annual_rate": 0
+        },
+        {
+          "period": "903 006 Months Repo > 50,000.00",
+          "interest_rate": 7.1,
+          "annual_rate": 0
+        },
+        {
+          "period": "903 006 Months Repo > 100,000.00",
+          "interest_rate": 7.1,
+          "annual_rate": 0
+        },
+        {
+          "period": "903 006 Months Repo > 1,000,000.00",
+          "interest_rate": 7.3,
+          "annual_rate": 0
+        },
+        {
+          "period": "904 012 Months Repo > 50,000.00",
+          "interest_rate": 7.6,
+          "annual_rate": 0
+        },
+        {
+          "period": "904 012 Months Repo > 100,000.00",
+          "interest_rate": 7.6,
+          "annual_rate": 0
+        },
+        {
+          "period": "904 012 Months Repo > 1,000,000.00",
+          "interest_rate": 7.8,
+          "annual_rate": 0
+        }
+      ]
+    }
+  ]
+}

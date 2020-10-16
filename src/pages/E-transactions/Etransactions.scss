@@ -1,0 +1,90 @@
+page-Etransactions {
+
+    #ionCard{
+        // min-height: 75%;
+        border: 2px solid #488bff;
+        border-radius: 15px;
+        margin: 0px;
+        margin-top:0px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #000000
+    }
+
+    .vertical{
+        display: flex!important;
+        align-content: center!important;
+        align-items: center!important;
+        
+    }
+
+    .filter{
+        padding: 5px;
+        border: 2px solid #488bff;
+        border-radius: 15px;
+        margin: 5px 0 5px 0
+    }
+    #paginetor{
+        padding-left: 35px !important;
+        padding-right: 35px !important;
+        margin: 0px;
+        text-align: center;
+        background-color: #488bff;
+        border-bottom: 2px solid #488bffaf;
+        border-radius: 15px;
+    }
+
+    .my-pagination .ngx-pagination .current {
+        background: rgb(94, 160, 223);
+    }
+
+    .debit{
+        background-color: #28a745;
+        color: #fff;
+        font-weight: bolder;
+        border: 2px solid #28a745;
+        border-radius: 100px;
+    }
+
+    .credit{
+        background-color: #eb1717;
+        color: #fff;
+        font-weight: bolder;
+        border: 2px solid #eb1717;
+        border-radius: 100px;
+    }
+
+    .my-pagination .ngx-pagination  {
+        background: #488bff;
+        text-align: center;
+        padding-right: 35px !important;
+        font-size: medium;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+        margin: 0px;
+    }
+
+    .balance{
+        font-weight: bolder;
+        font-size: xx-large;
+        text-align: center;
+    }
+    .balance-card{
+        box-shadow: 2px 2px 10px #DADADA;
+        border: 1px solid #b8b8b859;
+        border-radius: 10px;
+        padding: 20px;
+        height: 100px;
+        background-color: #488aff;
+        // background: #488aff;
+        color: #fff;
+        padding-bottom: 3px;
+        margin-top: 0px;
+    }
+    .lastUpdate{
+        font-size: x-small;
+        margin-top: 5px;
+        float: right;
+        color: #ffffff96
+    }
+}

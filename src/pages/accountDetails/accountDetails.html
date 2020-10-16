@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar hideBackButton color="primary">
+    <ion-buttons left>
+      <button ion-button menuToggle style="display: block !important;">
+        <ion-icon name="md-list" color="light"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      <!-- <span text-color="light"> {{account.heading}} </span> -->
+      <span text-color="light"> Account </span>
+      <!-- {{account.heading}} -->
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div id="ionCard">
+
+      <div class="balance-card">
+            <div class="balance-hint">Available Balance</div>
+            <div class="balance">LKR 150.00</div>
+            <div class= "lastUpdate"> Last Update:2019/09/04 13.30h</div>
+        </div>
+        <div class="balance-card2" style="margin-top:5px">
+          <div class="balance-hint">Current Balance</div>
+          <div class="balance">LKR 150.00</div>
+          <div class= "lastUpdate"> Last Update:2019/09/04 13.30h</div>
+      </div>
+
+        <div class="wrapper">
+          <p class="note"> NOTE: you can only change the Account Nike Name </p>
+            <ion-item>
+                <ion-label color="dark" floating>Account Nick Name</ion-label>
+                <ion-input value="My Account 1" ></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label color="dark" floating>Account Name</ion-label>
+                <ion-input value="John Doe" disabled></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label color="dark" floating>Account Number</ion-label>
+                <ion-input value="2365425896" disabled></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label color="dark" floating>Account Type</ion-label>
+                <ion-input value="Saving Account" disabled></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label color="dark" floating>Branch</ion-label>
+                <ion-input value="Colombo" disabled></ion-input>
+              </ion-item>
+              <div style="text-align: center" padding-top="5px">
+                  <button ion-button color="secondary" (click) = 'showAlert()'>Save Nick Name</button>
+              </div>
+        </div>
+
+
+  </div>
+</ion-content>

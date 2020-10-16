@@ -1,0 +1,30 @@
+<ion-menu id="menuSlider" [content]="content">
+  <ion-header>
+      <ion-toolbar no-padding>
+          <ion-list no-margin>
+              <ion-item padding-vertical color="menuHeader">
+                  <ion-avatar item-start (cilck)="goProfile()">
+                      <img src='assets/imgs/profile1.png'>
+                  </ion-avatar>
+                  <h2 style="font-weight:normal">Jhon Doe</h2>
+                  <h6 style="font-weight:normal">No 34/5, New Kandy Road,</h6>
+                  <h6 style="font-weight:normal">Malabe</h6>
+              </ion-item>
+          </ion-list>
+      </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item menuClose *ngFor="let p of pages" (click)="openPage(p)">
+          <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>
+          {{ p.title }}
+        </button>
+        <button ion-item menuClose (click)="logout()">
+          <ion-icon item-start name="md-log-out"></ion-icon>
+          LOGOUT
+        </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+      
+      <ion-nav id="nav" #content [root]="rootPage"></ion-nav>

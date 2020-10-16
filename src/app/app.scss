@@ -1,0 +1,59 @@
+#ionCard {
+    ion-card{
+        // background-color: rgb(233, 233, 236);
+        p{
+            font-weight: bold;
+        }
+        ion-card-header{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }    
+}
+
+#ionCardAccounts {
+    ion-card{
+        background-color: rgba(9, 102, 241, 0.014);
+
+        ion-card-header{
+            color: #488aff;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: -25px;            
+        }
+    }    
+}
+
+[text-color="my-custom-color"] {
+    color: rgb(0, 0, 0);
+}
+
+.menu-title {
+    padding: 1px 15px;
+    button {
+        padding: 5px 16px;
+        ion-label {
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem !important;
+            font-weight: 100 !important;
+            margin-top: 1px;
+            margin-bottom: 4px;
+            img {
+                width: 34px;
+                margin-right: 2rem;
+            }
+        }
+    }
+  }
+
+  .button-primary {
+    height: 50px !important;
+    border-radius: 10px !important;
+    font-size: 20px !important;
+  }
+  
+  ion-label{
+    font-weight: bold;
+    font-size: 15px !important;
+}

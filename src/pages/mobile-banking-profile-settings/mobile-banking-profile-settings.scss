@@ -1,0 +1,39 @@
+page-mobile-banking-profile-settings {
+  .circle-pic {
+    border-radius: 50%;
+  }
+
+  .image-container {
+    text-align: center;
+  }
+
+  .user-name {
+    font-size: large;
+    font-weight: bolder;
+  }
+
+  .custom-card-hint {
+    color: #DADADA;
+    font-size: small;
+    font-weight: bolder;
+  }
+
+  .custom-card-content {
+    font-weight: bolder;
+    font-size: larger;
+    color: #1e2023;
+    padding-left: 5px;
+  }
+
+  .border-left-success {
+    border-left: 3px solid #32db64;
+  }
+
+  .border-left-primary {
+    border-left: 3px solid #006EB9;
+  }
+
+  .border-left-warning {
+    border-left: 3px solid #fb8c00;
+  }
+}

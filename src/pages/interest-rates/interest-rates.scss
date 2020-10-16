@@ -1,0 +1,54 @@
+page-interest-rates {
+  .list-button-rates {
+    padding: 18px 10px 18px 10px !important;
+  }
+
+  .details-hint {
+    font-size: small;
+    color: #4d4d4d;
+    font-weight: bold;
+  }
+
+  .details-title {
+    font-weight: bold;
+    font-size: large;
+    color: #1e2023;
+  }
+
+  .segment-button {
+    color: #4d4d4d !important;
+    border-color: #fff !important;
+  }
+
+  .segment-activated {
+    color: #1e2023 !important;
+    border-color: #006EB9 !important;
+  }
+
+  .rates-ion-segment {
+    margin-bottom: 40px;
+  }
+
+  .custom-item {
+    margin: 15px 0 0 0 !important;
+  }
+
+  .custom-ion-card {
+    border-left: 4px solid #006EB9;
+  }
+
+  .custom-active {
+    background: #fbfbfb;
+    padding: 10px;
+  }
+
+  .custom-card-title {
+    padding: 5px;
+  }
+
+  .detail {
+    font-size: medium;
+    font-weight: bolder;
+    color: #222222;
+  }
+}

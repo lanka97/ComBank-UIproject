@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-navbar hideBackButton color="primary">
+      <ion-buttons left>
+          <button ion-button menuToggle style="display: block !important;">
+              <ion-icon name="md-list" color="light"></ion-icon>
+            </button>
+      </ion-buttons>
+    <ion-title>
+      <span text-color="light"> Help </span>
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openNotificationPage()">
+        <ion-icon name="md-notifications" color="light"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>  
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <div>
+        <div class="title">Internet Banking</div>
+        <div class="card-text" padding-top>
+          To access Internet Banking via the application a registration is required.
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <div>
+        <div class="title">Steps to follow prior to using the Mobile app</div>
+        <div class="card-text color-grey" padding-top>
+          Note: You should use a Personal Computer (PC) when you log in for the very first time to your Internet
+          Banking account. Steps to follow during your first log in,
+        </div>
+        <div class="card-text" padding-top>
+          <div class="mt-2">1. Log in with your Log In ID & the Password provided by the Bank.</div>
+          <div class="mt-2">2. Follow the instructions to set up the secret questions.</div>
+          <div class="mt-2">3. Change the temporary password provided by the Bank.</div>
+          <div class="mt-2">4. Now you could log in to the Mobile application at any given time.</div>
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <div>
+        <div class="title">Use Facilities</div>
+        <div class="card-text color-grey" padding-top>
+          It To use the following facilities, You should login via a Personal Computer
+          (These are not available via the Mobile application)
+        </div>
+        <div class="mt-2">1. Reset password activation through the secret questions.</div>
+        <div class="mt-2">2. Changing of secret questions.</div>
+        <div class="mt-2">3. Amending of personal information.</div>
+        <div class="mt-2">4. Uploading a secure Image.</div>
+        <div class="mt-2">5. Self registration of Bill payments.</div>
+        <div class="mt-2">6. Fund transfers to Third party accounts under Unregistered account.</div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <div>
+        <div class="title">Security Tips</div>
+        <div class="card-text color-grey" padding-top>
+          Please read the Security tips available in our web site to learn more on securing your Internet banking
+          accounts.
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

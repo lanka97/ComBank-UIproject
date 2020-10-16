@@ -1,0 +1,45 @@
+page-accountDetails {
+    .balance{
+        font-weight: bolder;
+        font-size: xx-large;
+        text-align: center;
+    }
+    .wrapper{
+        border: 1px solid #b8b8b859;
+        border-radius: 10px;
+        padding: 5px;
+        box-shadow: 2px 2px 10px #DADADA;
+        margin: 10px 0 20px 0;
+    }
+    .balance-card{
+        box-shadow: 2px 2px 10px #DADADA;
+        border: 1px solid #b8b8b859;
+        border-radius: 10px;
+        padding: 20px;
+        height: 100px;
+        background-color: #488aff;
+        color: #fff;
+        padding-bottom: 3px;
+    }
+    .balance-card2{
+        box-shadow: 2px 2px 10px #DADADA;
+        border: 1px solid #b8b8b859;
+        border-radius: 10px;
+        padding: 20px;
+        height: 100px;
+        background-color: #ff4848;
+        color: #fff;
+        padding-bottom: 3px;
+    }
+    .note{
+        color: #e6412c;
+        padding: 0 10px 0 10px;
+        margin:  10px 0 0 0;
+    }
+    .lastUpdate{
+        font-size: x-small;
+        margin-top: 5px;
+        float: right;
+        color: #ffffff96
+    }
+}

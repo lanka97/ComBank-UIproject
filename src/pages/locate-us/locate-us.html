@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar hideBackButton color="primary">
+      <ion-buttons left>
+          <button ion-button menuToggle style="display: block !important;">
+              <ion-icon name="md-list" color="light"></ion-icon>
+            </button>
+      </ion-buttons>
+    <ion-title>
+      <span text-color="light"> Locate Us </span>
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openNotificationPage()">
+        <ion-icon name="md-notifications" color="light"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>  
+</ion-header>
+
+  
+
+
+<ion-content>
+    <ion-segment [(ngModel)]="segment" (click)="changeMap()">
+        <ion-segment-button value="branch" id="segButton">
+          <ion-label>
+            Branches
+          </ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="atm" id="segButton">
+          <ion-label>
+            ATMs
+          </ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    <ion-toolbar color="light">
+
+        <ion-searchbar [placeholder]="searchText" [(ngModel)]="query" (ionInput)="searchPlace()" ></ion-searchbar>
+      </ion-toolbar>
+    
+      <ion-list>
+        <ion-item *ngFor="let place of places" (touchstart)="selectPlace(place)">{{place.description}}</ion-item>
+      </ion-list>
+  <div #pleaseConnect id="please-connect">
+    <p>Please connect to the Internet...</p>
+  </div>
+
+  <div #map id="map">
+    <ion-spinner></ion-spinner>
+  </div>
+
+</ion-content>

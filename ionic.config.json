@@ -1,0 +1,7 @@
+{
+  "name": "ComBank",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

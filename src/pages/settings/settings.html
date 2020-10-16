@@ -1,0 +1,72 @@
+<!--
+  Generated template for the SettingsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar hideBackButton color="primary">
+      <ion-buttons left>
+          <button ion-button menuToggle style="display: block !important;">
+              <ion-icon name="md-list" color="light"></ion-icon>
+            </button>
+      </ion-buttons>
+    <ion-title>
+      <span text-color="light"> Settings </span>
+    </ion-title>
+  </ion-navbar>  
+</ion-header>
+
+<ion-content padding>
+  <div>
+    <button ion-button block class="settings-button" (click)="showSettings(0)">Offline Data</button>
+    <ion-card class="settings-card" margin-top *ngIf="items[0]">
+      <ion-card-content>
+        <ion-grid class="settings-card-text">
+          <ion-row>
+            <ion-col col-10>
+              Offline Data
+            </ion-col>
+            <ion-col col-2>
+              <ion-toggle slot="start" color="medium" checked float-right></ion-toggle>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+    <button ion-button block class="settings-button" (click)="showSettings(1)">Configure PIN Number</button>
+    <ion-card class="settings-card" margin-top *ngIf="items[1]">
+      <ion-card-content>
+        <ion-grid class="settings-card-text">
+          <ion-row>
+            <ion-col col-10>
+              Configure PIN Number
+            </ion-col>
+            <ion-col col-2>
+              <ion-toggle slot="start" color="medium" checked float-right></ion-toggle>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+
+    <button ion-button block class="settings-button" (click)="showSettings(2)">PIN Code Change</button>
+    <ion-card *ngIf="items[2]">
+      <ion-card-content>
+        <ion-item>
+          <ion-label floating>Old PIN</ion-label>
+          <ion-input type="password" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>New PIN</ion-label>
+          <ion-input type="password" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Confirm PIN</ion-label>
+          <ion-input type="password" ></ion-input>
+        </ion-item>
+        <button ion-button block color="secondary" class="settings-button">DONE</button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

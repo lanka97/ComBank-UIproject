@@ -1,0 +1,66 @@
+page-dashboard {
+  .col-centered {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .summary {
+    height: 141px;
+    border-radius: 0px 0px 50px 50px;
+    background: #2c2c2c 0% 0% no-repeat;
+    overflow: auto;
+  }
+
+  .dashboard-items {
+    padding-top: 30px;
+    width: 100%;
+  }
+
+  .currency {
+    text-align: left;
+    font: Light 40px Roboto;
+    color: #ffffff;
+  }
+
+  .balance {
+    text-align: left;
+    font: Bold 36px Maven Pro;
+    letter-spacing: 0;
+    color: #ffffff;
+  }
+
+  .login-card {
+    width: 100%;
+    margin: 5px;
+  }
+
+  .credit-card {
+    height: 194px;
+    border-radius: 5px;
+    color: white !important;
+    background-image: url("../../../assets/imgs/combank-logo-transparent.png");
+
+    .dashboard-items {
+      width: 100%;
+    }
+
+    .currency {
+      text-align: left;
+      font: Light 40px Roboto;
+      color: #ffffff;
+    }
+
+    .balance {
+      text-align: left;
+      font: Bold 25px Maven Pro;
+      letter-spacing: 0;
+      color: #ffffff;
+    }
+
+    img {
+      height: 20px;
+      width: 40px;
+      float: right;
+    }
+  }
+}

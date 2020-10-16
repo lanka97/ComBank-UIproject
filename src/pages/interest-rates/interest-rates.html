@@ -1,0 +1,150 @@
+<ion-header>
+  <ion-navbar hideBackButton color="primary">
+      <ion-buttons left>
+          <button ion-button menuToggle style="display: block !important;">
+              <ion-icon name="md-list" color="light"></ion-icon>
+            </button>
+      </ion-buttons>
+    <ion-title>
+      <span text-color="light"> Interest Rates </span>
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openNotificationPage()">
+        <ion-icon name="md-notifications" color="light"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>  
+</ion-header>
+
+<ion-content>
+
+  <ion-segment [(ngModel)]="segment" class="rates-ion-segment">
+    <ion-segment-button value="s">
+      <ion-label>Savings</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="d">
+      <ion-label>Deposits</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="o">
+      <ion-label>Other</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <!--  Savings account-->
+
+  <ion-list *ngIf="segment==='s'" padding-left="5px" padding-right="5px">
+    <div *ngFor="let saving of savings; index as index"
+         [ngClass]="{'custom-item':true,'custom-active':aliveSaving[index]}" no-lines>
+      <button (click)="onListClick('s',index)" block class="list-button-rates" color="primary" ion-button
+              outline>{{saving.name}}</button>
+      <div *ngIf="aliveSaving[index]">
+        <div *ngFor="let detail of saving.details">
+          <ion-card class="custom-ion-card" margin-top>
+            <div class="custom-card-title">
+              <div class="details-hint">period of deposit</div>
+              <span class="details-title">{{detail.period}}</span>
+            </div>
+            <ion-card-content>
+              <ion-grid>
+                <ion-row>
+                  <ion-col col-6>
+                    <span class="details-hint">Interest Rate(p.a)</span>
+                    <div class="detail">{{detail.interest_rate}} %</div>
+                  </ion-col>
+                  <ion-col col-6>
+                    <div float-right="">
+                      <span class="details-hint">Annual % rate</span>
+                      <div class="detail">{{detail.annual_rate}} %</div>
+                    </div>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </div>
+
+    <ion-list *ngIf="segment==='d'" padding-left="5px" padding-right="5px">
+
+    </ion-list>
+
+
+  </ion-list>
+
+  <!-- deposits -->
+
+  <ion-list *ngIf="segment==='d'" padding-left="5px" padding-right="5px">
+    <div *ngFor="let deposit of deposits; index as index"
+         [ngClass]="{'custom-item':true,'custom-active':aliveDeposits[index]}" no-lines>
+      <button (click)="onListClick('d',index)" block class="list-button-rates" color="primary" ion-button
+              outline>{{deposit.name}}</button>
+      <div *ngIf="aliveDeposits[index]">
+        <div *ngFor="let detail of deposit.details">
+          <ion-card class="custom-ion-card" margin-top>
+            <div class="custom-card-title">
+              <div class="details-hint">period of deposit</div>
+              <span class="details-title">{{detail.period}}</span>
+            </div>
+            <ion-card-content>
+              <ion-grid>
+                <ion-row>
+                  <ion-col col-6>
+                    <span class="details-hint">Interest Rate(p.a)</span>
+                    <div class="detail">{{detail.interest_rate}} %</div>
+                  </ion-col>
+                  <ion-col col-6>
+                    <div float-right="">
+                      <span class="details-hint">Annual % rate</span>
+                      <div class="detail">{{detail.annual_rate}} %</div>
+                    </div>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </div>
+
+
+  </ion-list>
+
+  <!--  others -->
+  <ion-list *ngIf="segment==='o'" padding-left="5px" padding-right="5px">
+    <div *ngFor="let other of others; index as index"
+         [ngClass]="{'custom-item':true,'custom-active':aliveOthers[index]}" no-lines>
+      <button (click)="onListClick('o',index)" block class="list-button-rates" color="primary" ion-button
+              outline>{{other.name}}</button>
+      <div *ngIf="aliveOthers[index]">
+        <div *ngFor="let detail of other.details">
+          <ion-card class="custom-ion-card" margin-top>
+            <div class="custom-card-title">
+              <div class="details-hint">period of deposit</div>
+              <span class="details-title">{{detail.period}}</span>
+            </div>
+            <ion-card-content>
+              <ion-grid>
+                <ion-row>
+                  <ion-col col-6>
+                    <span class="details-hint">Interest Rate(p.a)</span>
+                    <div class="detail">{{detail.interest_rate}} %</div>
+                  </ion-col>
+                  <ion-col col-6>
+                    <div float-right="">
+                      <span class="details-hint">Annual % rate</span>
+                      <div class="detail">{{detail.annual_rate}} %</div>
+                    </div>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </div>
+
+
+  </ion-list>
+
+</ion-content>

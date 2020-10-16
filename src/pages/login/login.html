@@ -1,0 +1,47 @@
+<ion-content>
+
+  <div class="wrapper">
+    <div class="logo-wrapper">
+      <img class="logo float-right" src="assets/imgs/logo_login.png" alt="logo"/>
+    </div>
+  </div>
+
+  <ion-segment (ionChange)="segmentChanged($event)" [(ngModel)]="segment" class="login-ion-segment">
+    <ion-segment-button value="passbook">
+      <ion-label>e-Passbook</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="mobile">
+      <ion-label>Mobile Banking</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div class="content">
+    <form (ngSubmit)="login()">
+      <ion-item class="login-ion-item">
+        <ion-label color="dark" floating>{{ePassbook?'NIC / PASSPORT' : 'LOGIN ID'}}</ion-label>
+        <ion-input [(ngModel)]="data.id" name="id"></ion-input>
+      </ion-item>
+      <ion-item class="login-ion-item">
+        <ion-label color="dark" floating>{{ePassbook?'ACCESS CODE' : 'PASSWORD'}}</ion-label>
+        <ion-input type="password" [(ngModel)]="data.password" name="password"></ion-input>
+      </ion-item>
+      <ion-item class="login-ion-item" no-lines>
+        <ion-label>I accept the Terms and Conditions</ion-label>
+        <ion-checkbox color="primary" checked slot="start" [(ngModel)]="data.isChecked" name="isChecked"></ion-checkbox>
+      </ion-item>
+      <button class="button-primary" block class="login-button" ion-button type="submit">LOGIN</button>
+    </form>
+  </div>
+
+  <ion-footer class="login-ion-footer" no-border>
+    <ion-card color="light">
+      <ion-card-content>
+        <strong>For Registration, Please contact</strong>
+        <p>Tel: +94(0)11 2353596</p>
+        <p>Fax: +94(0)11 2430730</p>
+        <p>Email: ebanking@combank.com</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-footer>
+
+</ion-content>

@@ -1,0 +1,59 @@
+<!--
+  Generated template for the AccountListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar hideBackButton color="primary">
+        <ion-buttons left>
+            <button ion-button menuToggle style="display: block !important;">
+                <ion-icon name="md-list" color="light"></ion-icon>
+              </button>
+        </ion-buttons>
+      <ion-title>
+        <span text-color="light"> Account List </span>
+      </ion-title>
+      <ion-buttons end>
+        <button ion-button icon-only (click)="openNotificationPage()">
+          <ion-icon name="md-notifications" color="light"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>  
+</ion-header>
+
+<ion-content>
+  <div class="contentWrapper">
+      <ion-searchbar autocomplete= "on"></ion-searchbar>
+    
+    <div id="ionCardAccounts">
+        <ion-card class="cardClass" *ngFor="let account of accounts">
+            <ion-card-header>
+              {{account.heading}}
+            </ion-card-header>
+            
+            <ion-row>
+              <ion-col>
+                  <div style="margin:8px; margin-left: 10px">
+                      {{account.type }}<br/>
+                      {{account.number }}
+                      <div style="color:rgb(52, 52, 102); font-weight: bold">LKR {{account.balance}}</div>
+                  </div>
+              </ion-col>
+              <ion-col>
+                  <ion-card-content>
+                  <button ion-button color="secondaryDark" (click) = "navAcc(account)" >Transactions<br/> & Details</button>
+                </ion-card-content>
+              </ion-col>
+            </ion-row>
+           
+            
+          </ion-card>
+    </div>    
+</div>
+</ion-content>
+
+<!-- [(ngModel)]="myInput"
+    [showCancelButton]="shouldShowCancel"
+    (ionInput)="onInput($event)"
+    (ionCancel)="onCancel($event)" -->

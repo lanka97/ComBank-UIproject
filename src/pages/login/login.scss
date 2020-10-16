@@ -1,0 +1,48 @@
+page-login {
+  .segment-button {
+    color: #4d4d4d !important;
+    border-color: #fff !important;
+  }
+
+  .segment-activated {
+    color: #1e2023 !important;
+    border-color: #006EB9 !important;
+  }
+
+  .content {
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  // .login-button {
+  //   margin-top: 35px !important;
+  //   background: #006EB9;
+  // }
+
+  button {
+    height: 50px !important;
+    border-radius: 10px !important;
+    font-size: 20px !important;
+  }
+
+  .login-ion-item {
+    margin: 10px 0 10px !important;
+  }
+
+  .wrapper {
+    margin: 30px 0 0;
+  }
+
+  .logo {
+    width: 70%;
+    float: right;
+  }
+
+  .login-ion-segment {
+    margin-top: 120px;
+  }
+
+  .login-ion-footer {
+    padding-bottom: 9px;
+  }
+}
